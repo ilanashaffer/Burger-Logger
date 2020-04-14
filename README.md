@@ -7,7 +7,7 @@ This is a burger logger that uses MySQL, Node, Express, Handlebars, and a homema
 Directions: Enter a burger name. Once displayed on the left hand side of the page, click "Devour". It will move the burger to the right hand side of the page.  
 
 Deployed link:  
-
+https://the-burger-logger-app.herokuapp.com/  
 
 Built with:  
 Node.js  

@@ -1,21 +1,22 @@
 {
-  "name": "homework-13",
+  "name": "Burger-Logger",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ilanashaffer/Homework-13.git"
+    "url": "git+https://github.com/ilanashaffer/Burger-Logger.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ilanashaffer/Homework-13/issues"
+    "url": "https://github.com/ilanashaffer/Burger-Logger/issues"
   },
-  "homepage": "https://github.com/ilanashaffer/Homework-13#readme",
+  "homepage": "https://github.com/ilanashaffer/Burger-Logger#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
