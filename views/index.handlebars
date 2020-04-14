@@ -1,0 +1,44 @@
+<div class="container">
+<img src="https://i.pinimg.com/originals/00/17/93/001793a7193005c7e9aab43b9e24506e.jpg" alt="Vegan Burger" width="200">
+<h1>{{myName}} Vegan Burgers!</h1>
+
+<!-- Post submitted burger -->
+
+<div class="row">
+  <div class="column">
+
+  {{#each burgerData}}
+    {{#unless this.devoured}}
+      <p>{{this.burger_name}}</p>
+      <form class="devoured_form">
+        <input class="inputId" type="hidden" value={{this.id}}>
+        <input class="devourData" type="hidden" value={{this.devoured}}>
+        <input type="submit" value="Devour">
+      </form>
+    {{/unless}}
+  {{/each}}
+
+  </div>
+  <div class="column">
+
+  {{#each burgerData}}
+    {{#if this.devoured}}
+      <p>{{this.burger_name}}</p>
+    {{/if}}
+  {{/each}}
+
+  </div>
+</div>
+
+
+
+<h2>Add a Vegan Burger</h2>
+<form class="create-form" action="/burgers/create" method="POST">
+
+    <label for="burger">Name:</label>
+    <input type="text" id="add_burger" name="name">
+
+  <button type="submit">Submit</button>
+</form>
+
+</div>
